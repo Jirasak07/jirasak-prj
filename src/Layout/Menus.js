@@ -4,6 +4,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {BiSolidLeaf} from 'react-icons/bi'
 import {BiSolidUser} from 'react-icons/bi'
+import {IoNewspaperSharp} from 'react-icons/io5'
 import {
   DesktopOutlined,
   FileOutlined,
@@ -19,7 +20,6 @@ function Menus() {
       mode="inline"
       defaultSelectedKeys={window.location.pathname}
       //   items={items}
-      className="mt-5"
     >
       <Menu.Item key={"/home"} icon={<HomeFilled/>} >
       <NavLink
@@ -46,7 +46,7 @@ function Menus() {
         </Menu.Item>
       </SubMenu>
       <SubMenu key={'sub-4'} icon={<BiSolidUser/>} title={"ผู้ใช้งาน"} >
-           <Menu.Item key={'/list-user'}>
+          <Menu.Item key={'/list-user'}>
           <NavLink
             to="/list-user"
             className="d-flex align-items-center "
@@ -55,7 +55,19 @@ function Menus() {
             - รายการผู้ใช้งาน
           </NavLink>
         </Menu.Item>
+          <Menu.Item key={'/manage-user'}>
+          <NavLink
+            to="/manage-user"
+            className="d-flex align-items-center "
+            style={{ textDecoration: "none", gap: "5px" ,fontSize:'12px'}}
+          >
+            - จัดการสิทธิ์
+          </NavLink>
+        </Menu.Item>
       </SubMenu>
+      <Menu.Item key={"/report"} icon={<IoNewspaperSharp/>} >
+       <NavLink to={"/report"} > รายงานสรุป</NavLink> 
+      </Menu.Item>
     </Menu>
   );
 }
