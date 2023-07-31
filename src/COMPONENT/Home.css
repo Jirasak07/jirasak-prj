@@ -1,0 +1,22 @@
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    justify-content: center;
+}
+.card-flower{
+    position: relative;
+}
+.bottom-flower{
+    position: absolute;
+    background-color: #8a4dc0;
+    width: 95%;
+    height: 40px;
+    bottom: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
