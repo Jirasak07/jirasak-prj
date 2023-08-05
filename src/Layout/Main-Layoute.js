@@ -38,10 +38,10 @@ const MainLayoute = () => {
             borderBottom:'1px solid #dee2e6',
             fontWeight:'600'
           }}
-          className="d-flex justify-content-center align-items-center head bg-danger"
+          className="d-flex justify-content-center align-items-center head "
         >
-        <span className="text-capitalize" >plant genetic management system</span> 
-        <div className="d-flex bg-info" style={{justifySelf:'end'}} >Logout</div>
+        <span className="text-capitalize" >ระบบจัดเก็บพันธุกรรมพืช องค์การบริการส่วนจังหวัดกำแพงเพชร</span> 
+        <div className="d-flex " style={{position:'absolute',right:'20px'}} >Logout</div>
         </Header>
         <Content className="container-fluid " style={{backgroundColor:'#f8f9fa',overflow:'auto',maxHeight:"calc(100dvh - 40px)"}}>
           <div style={{ height: "10px" }}></div>

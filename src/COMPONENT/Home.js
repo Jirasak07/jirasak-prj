@@ -20,20 +20,21 @@ const data = [
 ];
 function Home() {
   return (
-    <div className="grid-container">
+    <div>
+     <div className="grid-container">
       {data.map((i) => (
         <Pane
           backgroundColor={"white"}
           elevation={3}
           borderRadius={5}
           className="card-flower p-2"
-          minHeight={"350px"}
+          minHeight={"400px"}
         >
           <img
             src={img1}
             alt=""
             width={"100%"}
-            style={{ maxHeight: "230px" }}
+            style={{ maxHeight: "250px" }}
           />
           <div>
             <div>ดอกราชพฤกษ์ (Golden shower)</div>
@@ -42,7 +43,9 @@ function Home() {
           <div className="bottom-flower">ข้อมูลเพิ่มเติม...</div>
         </Pane>
       ))}
+    </div> 
     </div>
+    
   );
 }
 

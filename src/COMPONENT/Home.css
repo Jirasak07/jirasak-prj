@@ -1,8 +1,9 @@
 .grid-container{
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
-    justify-content: center;
+    
+    grid-template-columns: repeat(auto-fill,minmax(250px,350px));
+    justify-content: space-evenly;
+    row-gap: 30px;
 }
 .card-flower{
     position: relative;
